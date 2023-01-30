@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9300187746.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>Carga de turnos</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="title">
+      <h1>Carga de turnos</h1>
+      <div class="mode-btn">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </div>
+    </div>
+    <form novalidate autocomplete="off" id="form">
+      <h4>Ingresar los datos para reservar un turno</h4>
+
+      <label for="name" class="field">
+        <input type="text" required id="name" name="name"/>
+        <span class="placeholder">Nombre:</span>
+        <small></small>
+      </label>
+
+      <label for="date" class="field">
+        <input type="date" required id="date" name="date"/>
+        <span class="placeholder">Fecha:</span>
+        <small></small>
+      </label>
+
+      <label for="hour" class="field">
+        <input type="time" required id="hour" name="hour" min="08:00" max="19:00" value="08:00" step="1200"/>
+        <span class="placeholder">Hora:</span>
+        <small></small>
+      </label>
+
+      <label for="email" class="field">
+        <input type="text" required id="email" name="email"/>
+        <span class="placeholder">E-mail:</span>
+        <small></small>
+      </label>
+
+      <label for="phone" class="field">
+        <input type="text" required id="phone" name="phone"/>
+        <span class="placeholder">Celular:</span>
+        <small></small>
+      </label>
+
+      <div class="details">
+        <p>Requisitos y detalles</p>
+        <div class="options">
+          <div class="radio-options">
+            <label for="p1">
+              <input type="radio" id="p1" name="quantity" value="1 persona" checked>1 persona
+            </label>
+            <label for="p2-4">
+              <input type="radio" id="p2-4" name="quantity" value="2 a 4 personas">2 a 4 personas
+            </label>
+            <label for="p+4">
+              <input type="radio" id="p+4" name="quantity" value="+4 persona">+4 personas
+            </label>
+          </div>
+
+          <div class="checkbox-options">
+            <label for="pc">
+              <input type="checkbox" id="pc" name="pc" value="Computadora" checked>Computadora
+            </label>
+            <label for="space">
+              <input type="checkbox" id="space" name="space" value="Mesa amplia">Mesa amplia
+            </label>
+            <label for="room">
+              <input type="checkbox" id="room" name="room" value="Sala privada">Sala privada
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <label for="about" class="field">
+        <input type="text" required id="message" name="about"/>
+        <span class="placeholder">¿Cómo nos conoció?</span>
+        <small></small>
+      </label>
+
+      <button type="submit">Reservar</button>
+
+    </form>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="cards-container">
+
+    <!-- <div class="card">
+      <div class="card-title">
+        <h2>Nombre</h2>
+        <div class="contact">
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </div>
+      <div class="card-details">
+        <h4>Cantidad: 1 persona</h4>
+        <p>Requisitos: computadora, mesa amplia, sala privada</p>
+      </div>
+      <div class="card-time">
+        <div >10:00hs</div>
+        <div >10/02/2023</div>
+      </div>
+    </div> -->
+
+  </div>
+  <script src="./assets/utils.js"></script>
+  <script src="./assets/validation.js"></script>
+  <script src="./assets/main.js"></script>
+</body>
+</html>
