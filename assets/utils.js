@@ -30,7 +30,7 @@ const isPhoneValid = (phone) => {
 const isDateValid = (date) => {
   const today = new Date();
   const turnDate = new Date(date);
-  turnDate.setDate(turnDate.getDate() + 1)
+  turnDate.setDate(turnDate.getDate())
   return today < turnDate
 }
 
