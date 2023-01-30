@@ -40,7 +40,7 @@ const renderTurn = (turn) => {
           <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${email}" target='_blank'>
           <i class="fa-solid fa-envelope"></i> 
           </a>
-          <a href="https://api.whatsapp.com/send?phone=+549${phone}" target='_blank'>
+          <a href="https://api.whatsapp.com/send?phone=${phone}&text=Buen%20dia" target='_blank'>
           <i class="fa-solid fa-phone"></i>
           </a>
         </div>
